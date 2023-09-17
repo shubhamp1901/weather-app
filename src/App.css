@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Open+Sans:wght@300;400&family=Poppins:wght@400;500&family=Raleway&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Rubik', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 607px;
+  height: 780px;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 12px;
+  background-image: linear-gradient(180deg, #282057 0%, #a39ccd 100%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 14px;
+  padding-top: 60px;
+}
+
+.top-bar input {
+  display: flex;
+  width: 362px;
+  height: 50px;
+  background: #ebfffc;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 40px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ebfffc;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.weather-image {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-temp {
+  display: flex;
+  justify-content: center;
   color: white;
+  font-size: 120px;
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.weather-location {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.data-container {
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.element {
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.data {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.icon {
+  margin-top: 10px;
 }
